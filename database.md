@@ -1,18 +1,22 @@
 
+## CAR DEALER DB SCHEME
 
-## CARS:
+## MOdels: Car
+
+## Table Cars
 
 - id:                   Bigint                  PRIMARYKEY(NOTNULL,AUTOINCREMENTS, UNIQUE)
 - model:                VARCHAR(100)            NOTNULL INDEX
 - brand:                VARCHAR(50)             NOTNULL INDEX
-- price:                DECIMAL(5,2)            NULL
+- price:                DECIMAL(5,2)            NOTNULL
 - year:                 YEAR                    NULL
 - km:                   MEDIUMINT               NULL
 - power_supply:         VARCHAR(50)             NULL
-- image: V              ARCHAR(255)             NULL
+- image: V              VARCHAR(255)             NULL
 - available:            TINYINT                 NULL DEFAULT(1)
-- color:                VARCHAR(50)             NULL
+- color:                VARCHAR(50)             NOTNULL
 - doors:                TINYINT                 NULL 	
+- seats                 TINYINT                 NULL
 - displacement: S       MALLINT                 NULL
 - origin_country:       VARCHAR(56)             NULL
 - plate: V              ARCHAR(20)              NULL
